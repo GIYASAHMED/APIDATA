@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Handlee', cursive;
+}
+#header-section{
+    width: 100%;
+    min-width: 400px;
+    height: 100vh;
+    min-height: 800px;
+    background-color: #000;
+}
+.center{
+    width: 60%;
+    min-width: 400px;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(97, 233, 115);
+    /*border: 1px solid white;*/
+    margin-top: 3rem;
+    padding: 1.5rem 0;
+}
+h1{
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.center-data h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #000;
+}
+input{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-align: center;
+    border: none;
+}
+button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    margin-top: 1.2rem;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 5px; 
+    text-align: center;
+    cursor: pointer;
+}

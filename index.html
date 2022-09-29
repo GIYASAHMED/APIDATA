@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./script.js">
+</head>
+<body>
+    
+    <section id="header-section">
+        <h1>What does your name say about your personality ?</h1>
+        <div class="center">
+            <div class="center-data">
+                <h3>Enter Your Name</h3>
+                <br>
+                <input type="text" name="" id="nameid">
+            </div>
+            <div class="imagediv"> <br>
+                <img src="./image/welcome-img.png" alt="" width="250" height="250" id="imgchange">
+            </div>
+
+            <button>Click Me</button>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                const name = $ ("#nameid").val();
+                /*alert(name);*/
+                $("#imgchange").attr("src", `https://joeschmoe.io/api/v1/${name}`);
+            });
+        });
+    </script>
+</body>
+</html>
